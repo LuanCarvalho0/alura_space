@@ -117,6 +117,30 @@ USE_I18N = True
 USE_TZ = True
 
 
+# AWS Configuração
+
+AWS_ACCESS_KEY_ID = 'AKIAYLAX4ARPL3PVEL66'
+
+AWS_SECRET_ACCESS_KEY =  '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'
+
+AWS_STORAGE_BUCKET_NAME = 'fotografias-alura-space2'
+
+AWS_SS3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+
+AWS_DEFAULT_ACL = 'public-read'
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400'
+}
+
+AWS_LOCATION = 'static'
+
+AWS_QUERYSTRING_AUTH = False
+
+AWS_HEADERS = {
+    'Access-Control-Allow_Origin': '*',
+}
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
@@ -146,3 +170,4 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
     messages.SUCCESS: 'success',
 }
+
