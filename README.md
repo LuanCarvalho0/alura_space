@@ -31,7 +31,7 @@ git clone https://github.com/LuanCarvalho0/alura_space.git
 Depois disso, abra seu terminal na pasta do projeto e execute:
 
 ```
-pip install -r requisitos.txt
+pip install -r requirements.txt
 ```
 
 Depois disso é só executar o comando **"python manage.py runserver"** no terminal e tudo deve estar funcionando! 👌
